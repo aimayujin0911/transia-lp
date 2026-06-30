@@ -340,6 +340,11 @@ a{text-decoration:none;color:inherit}
       <div style="position:relative;background:linear-gradient(150deg,#16365e,#0a1626);display:grid;place-items:center;padding:30px;">
         <div style="position:relative;width:100%;max-width:430px;">
           <img src="img/kanto-map.png" alt="関東1都6県 対応エリアマップ（東京・埼玉・神奈川・千葉・群馬・栃木・茨城）" style="width:100%;display:block;filter:drop-shadow(0 14px 34px rgba(0,0,0,.5));">
+          <span style="position:absolute;left:45%;top:43%;width:18px;height:18px;transform:translate(-50%,-50%);">
+            <span style="position:absolute;inset:0;border-radius:50%;background:#f4b942;opacity:.65;animation:pulse 2.4s ease-out infinite;"></span>
+            <span style="position:absolute;inset:3px;border-radius:50%;background:#e7a426;border:2px solid #fff;box-shadow:0 0 12px rgba(231,164,38,.95);"></span>
+          </span>
+          <span style="position:absolute;left:45%;top:43%;transform:translate(14px,-50%);white-space:nowrap;font-size:.66rem;font-weight:800;color:#0a1626;background:#f4b942;padding:3px 9px;border-radius:7px;box-shadow:0 6px 14px rgba(0,0,0,.4);">幸手 物流拠点</span>
           <!-- radar overlay: hub(幸手 162,155) -> prefectures, aligned to the 360x360 map -->
           <svg viewBox="0 0 360 360" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;" fill="none">
             <g stroke="rgba(255,255,255,.3)">
@@ -354,29 +359,24 @@ a{text-decoration:none;color:inherit}
             <g stroke="#f4b942" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1 6" opacity=".8">
               <line x1="162" y1="155" x2="100" y2="108"/>
               <line x1="162" y1="155" x2="196" y2="76"/>
-              <line x1="162" y1="155" x2="255" y2="148"/>
+              <line x1="162" y1="155" x2="272" y2="150"/>
               <line x1="162" y1="155" x2="262" y2="238"/>
               <line x1="162" y1="155" x2="156" y2="216"/>
               <line x1="162" y1="155" x2="138" y2="256"/>
             </g>
             <g fill="#f4b942" stroke="#0a1626" stroke-width=".8">
-              <circle cx="100" cy="108" r="3"/><circle cx="196" cy="76" r="3"/><circle cx="255" cy="148" r="3"/>
+              <circle cx="100" cy="108" r="3"/><circle cx="196" cy="76" r="3"/><circle cx="272" cy="150" r="3"/>
               <circle cx="262" cy="238" r="3"/><circle cx="156" cy="216" r="3"/><circle cx="138" cy="256" r="3"/>
             </g>
-            <g fill="#fff">
+            <g fill="#fff" stroke="#0a1626" stroke-width=".7">
               <circle r="3.2"><animate attributeName="cx" values="162;100" dur="2.4s" begin="0s" repeatCount="indefinite"/><animate attributeName="cy" values="155;108" dur="2.4s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.7;1" dur="2.4s" begin="0s" repeatCount="indefinite"/></circle>
               <circle r="3.2"><animate attributeName="cx" values="162;196" dur="2.4s" begin=".4s" repeatCount="indefinite"/><animate attributeName="cy" values="155;76" dur="2.4s" begin=".4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.7;1" dur="2.4s" begin=".4s" repeatCount="indefinite"/></circle>
-              <circle r="3.2"><animate attributeName="cx" values="162;255" dur="2.4s" begin=".8s" repeatCount="indefinite"/><animate attributeName="cy" values="155;148" dur="2.4s" begin=".8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.7;1" dur="2.4s" begin=".8s" repeatCount="indefinite"/></circle>
+              <circle r="3.2"><animate attributeName="cx" values="162;272" dur="2.4s" begin=".8s" repeatCount="indefinite"/><animate attributeName="cy" values="155;150" dur="2.4s" begin=".8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.7;1" dur="2.4s" begin=".8s" repeatCount="indefinite"/></circle>
               <circle r="3.2"><animate attributeName="cx" values="162;262" dur="2.4s" begin="1.2s" repeatCount="indefinite"/><animate attributeName="cy" values="155;238" dur="2.4s" begin="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.7;1" dur="2.4s" begin="1.2s" repeatCount="indefinite"/></circle>
               <circle r="3.2"><animate attributeName="cx" values="162;156" dur="2.4s" begin="1.6s" repeatCount="indefinite"/><animate attributeName="cy" values="155;216" dur="2.4s" begin="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.7;1" dur="2.4s" begin="1.6s" repeatCount="indefinite"/></circle>
               <circle r="3.2"><animate attributeName="cx" values="162;138" dur="2.4s" begin="2s" repeatCount="indefinite"/><animate attributeName="cy" values="155;256" dur="2.4s" begin="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.7;1" dur="2.4s" begin="2s" repeatCount="indefinite"/></circle>
             </g>
           </svg>
-          <span style="position:absolute;left:45%;top:43%;width:18px;height:18px;transform:translate(-50%,-50%);">
-            <span style="position:absolute;inset:0;border-radius:50%;background:#f4b942;opacity:.65;animation:pulse 2.4s ease-out infinite;"></span>
-            <span style="position:absolute;inset:3px;border-radius:50%;background:#e7a426;border:2px solid #fff;box-shadow:0 0 12px rgba(231,164,38,.95);"></span>
-          </span>
-          <span style="position:absolute;left:45%;top:43%;transform:translate(14px,-50%);white-space:nowrap;font-size:.66rem;font-weight:800;color:#0a1626;background:#f4b942;padding:3px 9px;border-radius:7px;box-shadow:0 6px 14px rgba(0,0,0,.4);">幸手 物流拠点</span>
         </div>
       </div>
     </div>
